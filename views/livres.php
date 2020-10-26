@@ -1,6 +1,7 @@
 <section id="contenu">
     <h2>Les Livres</h2>
     <p>Bienvenue sur la page des livres.</p>
+    <?php echo "jkdjfkjdkllkdjj" ?>
     <div class="formulaire">
         <form action="index.php?action=livres" method="post">
             <p>Rechercher : <input type="text" name="keyword" value="<?php echo $html_motcle ?>"/>
@@ -8,6 +9,7 @@
         </form>
     </div>
     <div id="notification"><?php echo $notification; ?></div>
+    
     <table id="tableBalises">
         <thead>
         <tr>
