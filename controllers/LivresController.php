@@ -5,6 +5,7 @@ class LivresController{
 
 	public function __construct() {
         $this->_db = Db::getInstance();
+		echo "jdjfksjkfdjskl";
 	}
 			
 	public function run(){
