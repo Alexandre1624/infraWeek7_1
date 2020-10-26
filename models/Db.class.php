@@ -17,6 +17,7 @@ class Db
 			    ltrim($db["path"], "/")
 			));
          	echo  $db["host"]; 
+		echo  $db["port"]; 
         } catch (PDOException $e) {
 		    die('Erreur de connexion à la base de données : '.$e->getMessage());
         }
