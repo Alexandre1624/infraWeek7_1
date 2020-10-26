@@ -7,8 +7,8 @@ class Db
     private function __construct()
     {
         try {
-		$db = parse_url(getenv("DATABASE_URL"))
-		var_dump($db);
+		$db = parse_url(getenv("DATABASE_URL"));
+		
 		$this->_db = new PDO("pgsql:" . sprintf(
 			    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
 			    $db["host"],
