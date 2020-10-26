@@ -16,14 +16,9 @@ class Db
 			    $db["pass"],
 			    ltrim($db["path"], "/")
 			));
-            $this->_db = new PDO('mysql:host=localhost;dbname=bdbn;charset=utf8', 'root', '');
-          
-        } 
-		catch (PDOException $e) {
-		    die('Erreur de connexion à la base de données : '.$e->getMessage());
-        }
-
-		catch (PDOException $e) {
+         
+          $this->_db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
 		    die('Erreur de connexion à la base de données : '.$e->getMessage());
         }
     }
